@@ -92,6 +92,7 @@
     text-transform: uppercase;
     background-color: transparent;
     padding: 0px;
+    cursor: pointer;
 }
 
 .menu_login{
@@ -131,9 +132,11 @@
 .menu_facebook{
     width: 24px;
     height: 24px;
+    cursor: pointer;
 }
 
 .menu_twitter{
     width: 24px;
     height: 19.5px;
+    cursor: pointer;
 }
