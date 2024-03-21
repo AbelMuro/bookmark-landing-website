@@ -2,6 +2,9 @@ import React from 'react';
 import styles from './styles.module.css';
 import globalIcons from '/public/global/icons';
 import localIcons from './icons';
+import {motion} from 'framer-motion';
+
+//create animation with clip-path: circle(20px at 30px 35px)  
 
 function MobileNavBar() {
     return(
