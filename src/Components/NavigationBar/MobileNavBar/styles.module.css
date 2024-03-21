@@ -1,0 +1,139 @@
+.nav{
+    width: 90%;
+    margin: 40px auto 80.76px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_logo{
+    width: 149px;
+    height: 25px;
+}
+
+.nav_menu{
+    width: 18px;
+    height: 15px;
+    padding: 0px;
+    margin: 0px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.nav_menu > img{
+    width: 18px;
+    height: 15px;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: 148px 1fr;
+    grid-template-rows: auto auto 203px;
+    align-content: start;
+    gap: 40px;
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 40px 32px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(36, 42, 69, 0.95);
+    backdrop-filter: blur(16.309690475463867px);
+}
+
+.menu_logo{
+    width: 148px;
+    height: 25px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.menu_close{
+    width: 14.8px;
+    height: 14.8px;
+    justify-self: end;
+    align-self: center;
+    cursor: pointer;
+}
+
+.menu_links{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    grid-column: 1/3;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu_links > li {
+    width: 100%;
+}
+
+.menu_links > li{
+    border-top: 1px solid rgba(255, 255, 255, 0.15)
+}
+
+.menu_link{
+    width: 100%;
+    height: 65px;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-family: var(--font);
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px; /* 85% */
+    letter-spacing: 2.308px;
+    text-transform: uppercase;
+    background-color: transparent;
+    padding: 0px;
+}
+
+.menu_login{
+    width: 100%;
+    height: 48px;
+    border: 2px solid #FFF;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #FFF;
+    font-family: var(--font);
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 17px; /* 85% */
+    letter-spacing: 2.308px;
+    text-transform: uppercase;
+    margin-top: 24px;
+    cursor: pointer;
+}
+
+.menu_login:hover{
+    background-color: white;
+    color: rgba(36, 42, 69);
+}
+
+.menu_social{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 40px;
+    list-style-type: none;
+    grid-column: 1/3;
+    padding: 0px;
+    margin: 0px;
+}
+
+.menu_facebook{
+    width: 24px;
+    height: 24px;
+}
+
+.menu_twitter{
+    width: 24px;
+    height: 19.5px;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Abel Muro"/>       
+    <meta name="keywords" content="bookmark"/>
+    <meta name="description" content="A simple bookmark manager that will help you organize your bookmarks in an elegant way"/> 
+    <meta name="theme-color" content="#000" />    
+    <link rel="manifest" href="/PWA/manifest.json"/>                       
+    <title>Bookmark Manager</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+        if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register(`/PWA/ServiceWorkers.js`).then((registration) => {
+                        console.log('Worker registration is successful', registration.scope);
+                    }, (err) => {
+                        console.log('Worker registration has failed', err);
+                    })
+                });
+        } else 
+                console.log('Service Worker is not supported by your browser.');
+    </script>
+</body>
+</html>
