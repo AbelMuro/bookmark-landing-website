@@ -3,8 +3,24 @@
     src: url('/public/fonts/Rubik-VariableFont_wght.ttf');
 }
 
+.bg_one{
+    width: 500px;
+    height: 352px;
+    border-radius: 316.5px 0px 0px 316.5px;
+    background: #5267DF;
+    position: absolute;
+    z-index: var(--farthest);
+    right: 0px;
+    top: 336px;
+}
+
 :root{
-    --font: 'rubik'
+    --font: 'rubik';
+    --closest: 100;
+    --closer: 75;
+    --close: 50;
+    --far: 25;
+    --farthest: 1;
 }
 
 body{
@@ -17,4 +33,25 @@ body{
 * {
     transition: all 0.2s linear;
     box-sizing: border-box;
+}
+
+@media(max-width: 1065px){
+    .bg_one{
+        top: 286px;
+        width: 400px;
+    }
+}
+
+@media(max-width: 860px){
+    .bg_one{
+        top: 220px;
+    }
+}
+
+@media(max-width: 600px){
+    .bg_one{
+        top: 197px;
+        height: 203px;
+        width: 288px;
+    }
 }

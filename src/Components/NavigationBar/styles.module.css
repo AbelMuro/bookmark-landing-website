@@ -30,6 +30,11 @@
     line-height: 17px; /* 130.769% */
     letter-spacing: 1.5px;
     text-transform: uppercase;
+    cursor: pointer;
+}
+
+.nav_link:hover{
+    color: #FA5959;
 }
 
 .nav_login{
@@ -38,7 +43,8 @@
     border-radius: 5px;
     text-align: center;
     border: none;
-    background: #FA5959;
+    background-color: #FA5959;
+    border: 2px solid #FA5959; 
     box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20);
     color: #FFF;
     font-family: var(--font);
@@ -48,6 +54,12 @@
     line-height: 17px; /* 130.769% */
     letter-spacing: 1.5px;
     text-transform: uppercase;
+    cursor: pointer;
+}
+
+.nav_login:hover{
+    background-color: transparent;
+    color: #FA5959; 
 }
 
 @media(max-width: 1150px){
@@ -57,6 +69,10 @@
 }
 
 @media(max-width: 860px){
+    .nav{
+        margin-bottom: 80px;
+    }
+
     .nav_links{
         gap: 32px;
     }

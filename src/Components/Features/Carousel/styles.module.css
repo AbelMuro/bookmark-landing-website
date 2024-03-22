@@ -1,0 +1,48 @@
+.features_select{
+    width: 730px;
+    display: flex;
+    border-bottom: 1px solid rgba(73, 93, 207, 0.20);
+    margin-bottom: 72px;
+    position: relative;
+}
+
+.features_button{
+    width: 243px;
+    height: 45px;
+    border: none;
+    background-color: transparent;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    color: #242A45;
+    font-family: var(--font);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px; /* 106.25% */
+    letter-spacing: 0.533px;
+    cursor: pointer;
+}
+
+.features_line{
+    width: 243px;
+    height: 4px;
+    background-color: #FA5959;
+    position: absolute;
+    bottom: 0px;
+}
+
+.features_line:nth-of-type(1){
+    left: 0px;
+}
+
+.features_line:nth-of-type(2){
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+
+.features_line:nth-of-type(3){
+    right: 0px;
+}
