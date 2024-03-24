@@ -11,6 +11,7 @@ function App() {
                 <Header/>
                 <Features/>
                 <div className='bg_one'></div>
+                <div className='bg_two'></div>
             </main>
      )
 }

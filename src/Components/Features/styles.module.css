@@ -2,6 +2,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0px auto 238px auto;
+    position: relative;
+    z-index: var(--close)
 }
 
 .features_title{

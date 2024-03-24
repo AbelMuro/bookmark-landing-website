@@ -14,6 +14,18 @@
     top: 336px;
 }
 
+
+.bg_two{
+    width: 500px;
+    height: 352px;
+    border-radius: 0px 316.5px 316.5px 0px;
+    background: #5267DF;
+    position: absolute;
+    z-index: var(--farthest);
+    left: 0px;
+    top: 1196px;
+}
+
 :root{
     --font: 'rubik';
     --closest: 100;
