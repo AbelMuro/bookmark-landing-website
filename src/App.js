@@ -1,7 +1,9 @@
 import React from 'react';
 import NavigationBar from './Components/NavigationBar';
 import Header from './Components/Header';
-import Features from './Components/Features'
+import Features from './Components/Features';
+import Extensions from './Components/Extensions';
+import FAQ from './Components/FAQ';
 import './styles.css'
 
 function App() {
@@ -10,8 +12,9 @@ function App() {
                 <NavigationBar/>
                 <Header/>
                 <Features/>
+                <Extensions/>
+                <FAQ/>
                 <div className='bg_one'></div>
-                <div className='bg_two'></div>
             </main>
      )
 }

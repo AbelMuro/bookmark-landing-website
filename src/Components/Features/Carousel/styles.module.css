@@ -7,7 +7,7 @@
 }
 
 .features_button{
-    width: 243px;
+    width: 33.333333%;
     height: 45px;
     border: none;
     background-color: transparent;
@@ -25,8 +25,12 @@
     cursor: pointer;
 }
 
+.features_button:hover{
+    color: #FA5959;
+}
+
 .line_one, .line_two, .line_three{
-    width: 243px;
+    width: 33.33333%;
     height: 4px;
     background-color: #FA5959;
     position: absolute;
@@ -48,11 +52,15 @@
     right: 0px;
 }
 
+
+
+
 .carousel{
-    width: 1106px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 35px;
 }
 
 .carousel_image{
@@ -72,9 +80,9 @@
     font-size: 2rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 52px; /* 162.5% */
+    line-height: 32px; /* 162.5% */
     letter-spacing: -0.1px;
-    margin: 0px 0px 16px 0px;
+    margin: 0px 0px 36px 0px;
 }
 
 .carousel_content > p{
@@ -108,4 +116,67 @@
 .carousel_content > button:hover{
     color: #5267DF;
     background-color: transparent;
+}
+
+@media(max-width: 1000px){
+    .carousel_image{
+        width: 436px;   
+    }
+}
+
+@media(max-width: 860px){
+    .features_select{
+        width: 100%;
+    }
+
+    .carousel{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .carousel_content{
+        align-items: center;
+    }
+
+    .carousel_image{
+        width: auto;
+        height: 300px;
+    }
+
+    .carousel_content > h2{
+        margin-bottom: 12px;
+        line-height: 52px;
+    }
+
+    .carousel_content > p{
+        text-align: center;
+        margin-bottom: 16px;
+    }
+}
+
+@media(max-width: 600px){
+    .carousel{
+        gap: 69px;
+    }
+
+    .carousel_image{
+        height: 201px;
+    }
+
+    .carousel_content{
+        width: 100%;
+    }
+
+    .carousel_content > h2{
+        font-size: 1.5rem;
+        line-height: 52px; /* 216.667% */
+        letter-spacing: -0.075px;
+        margin-bottom: 0px;
+    }
+
+    .carousel_content > p{
+        font-size: 0.9375rem;
+        line-height: 25px; /* 166.667% */
+        margin-bottom: 15px;
+    }
 }

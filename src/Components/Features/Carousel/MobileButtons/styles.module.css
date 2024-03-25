@@ -1,0 +1,43 @@
+.features{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 72.11px;
+}
+
+.features_select{
+    height: 57px;
+    padding: 0px;
+    background-color: transparent;
+    color: rgba(36, 42, 69, 0.75);
+    text-align: center;
+    font-family: var(--font);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px; /* 106.25% */
+    letter-spacing: 0.533px;
+    border: none;
+    border-top: 1px solid rgba(73, 93, 207, 0.20);
+    position: relative;
+    cursor: pointer;
+}
+
+.features_select:hover{
+    color: #FA5959;
+}
+
+.features_select:last-child{
+    border-bottom: 1px solid rgba(73, 93, 207, 0.20);
+}
+
+.underline{
+    width: 143px;
+    height: 4px;
+    background-color: #FA5959;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}

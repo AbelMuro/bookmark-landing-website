@@ -4,9 +4,12 @@ import {motion} from 'framer-motion';
 import carouselData from './carousel-data';
 import images from './images';
 import {fadeInOutVariant} from './Variants';
+import MobileButtons from './MobileButtons';
+import useMediaQuery from '~/Hooks/useMediaQuery.js';
 
 function Carousel() {
     const [feature, setFeature] = useState('Simple Bookmarking');
+    const [mobile] = useMediaQuery('(max-width: 600px)');
 
     const imageProps = {
         variants: fadeInOutVariant,
@@ -34,7 +37,6 @@ function Carousel() {
         Array.from(allButtons).forEach((button) => {
             button.style.color = ''
         });
-
         Array.from(allButtons).forEach((button) => {
             let currentFeature = button.getAttribute('data-feature');
             if(currentFeature === feature)
@@ -45,6 +47,7 @@ function Carousel() {
 
     return(
         <>
+            {mobile ? <MobileButtons feature={feature} handleFeature={handleFeature}/> :
             <section className={styles.features_select} onClick={handleFeature}>
                 <button className={styles.features_button} data-feature='Simple Bookmarking'>
                     Simple Bookmarking
@@ -58,7 +61,7 @@ function Carousel() {
                 {feature === 'Simple Bookmarking' && <motion.div layoutId='underline' className={styles.line_one}></motion.div>}
                 {feature === 'Speedy Searching' && <motion.div layoutId='underline' className={styles.line_two}></motion.div>}
                 {feature === 'Easy Sharing' && <motion.div layoutId='underline' className={styles.line_three}></motion.div>}
-            </section>
+            </section>}
             <section className={styles.carousel}>
                 {feature === 'Simple Bookmarking' && <motion.img className={styles.carousel_image} src={images['bookmark']} key='1' {...imageProps}/>}
                 {feature === 'Speedy Searching' && <motion.img className={styles.carousel_image} src={images['searching']} key='2' {...imageProps}/>}
