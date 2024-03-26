@@ -1,0 +1,126 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88px;
+    background-color: #242A45;
+}
+
+.footer_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1110px;
+}
+
+.footer_links{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 44px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer_logo{
+    width: 148px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.footer_link{
+    color: #FFF;
+    font-family: var(--font);
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px; /* 130.769% */
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.footer_link:hover{
+    color: #FA5959;
+}
+
+.footer_social{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.footer_social_link{
+    width: 24px;    
+    cursor: pointer;
+    mask-position: center;
+    -webkit-mask-position: center;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+}
+
+.footer_social_link:nth-of-type(1){
+    height: 24px;
+    background-color: white;
+    mask-image: url('./icons/icon-facebook.svg');
+    -webkit-mask-image: url('./icons/icon-facebook.svg');
+    mask-size: 24px 24px;
+    -webkit-mask-size: 24px 24px;
+}
+
+.footer_social_link:nth-of-type(2){
+    height: 19.5px;
+    background-color: white;
+    mask-image: url('./icons/icon-twitter.svg');
+    -webkit-mask-image: url('./icons/icon-twitter.svg');
+    mask-size: 24px 19.5px;
+    -webkit-mask-size: 24px 19.5px;
+}
+
+.footer_social_link:hover{
+    background-color: #FA5959;
+}
+
+@media(max-width: 1160px){
+    .footer_content{
+        width: 90%;
+    }
+}
+
+@media(max-width: 860px){
+    .footer{
+        height: 170px;
+    }
+
+    .footer_content{
+        flex-direction: column;
+        gap: 30px
+    }
+}
+
+@media(max-width: 600px){
+    .footer{
+        height: 334px;
+    }
+
+    .footer_content{
+        gap: 48px;
+    }
+
+    .footer_links{
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .footer_link{
+        font-size: 0.9375rem;
+        letter-spacing: 1.731px;
+    }
+
+    .footer_logo{
+        margin-bottom: 7px;
+    }
+}

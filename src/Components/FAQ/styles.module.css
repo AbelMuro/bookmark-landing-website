@@ -56,3 +56,31 @@
     background-color: transparent;
     color: #5267DF
 }
+
+@media(max-width: 600px){
+    .faq{
+        width: 90%;
+        margin-bottom: 123px;
+    }
+
+    .faq > div:nth-of-type(1){
+        border-top: none;
+    }
+
+    .faq > div:nth-of-type(4){
+        margin-bottom: 48px;
+    }
+
+    .faq_title{
+        width: 311px;
+        font-size: 1.5rem;
+        line-height: 30px;
+        letter-spacing: -0.075px;
+    }
+
+    .faq_desc{
+        font-size: 0.9375rem;
+        line-height: 25px; /* 166.667% */
+        margin-bottom: 48px;
+    }
+}

@@ -4,6 +4,8 @@ import Header from './Components/Header';
 import Features from './Components/Features';
 import Extensions from './Components/Extensions';
 import FAQ from './Components/FAQ';
+import ContactUs from './Components/ContactUs';
+import FooterBar from './Components/FooterBar';
 import './styles.css'
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
                 <Features/>
                 <Extensions/>
                 <FAQ/>
+                <ContactUs/>
+                <FooterBar/>
                 <div className='bg_one'></div>
             </main>
      )

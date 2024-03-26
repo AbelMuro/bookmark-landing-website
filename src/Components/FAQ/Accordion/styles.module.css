@@ -9,6 +9,7 @@
     row-gap: 16px;
     cursor: pointer;
     overflow: hidden;
+    transition: max-height 0.4s linear;
 }
 
 .accordion:hover > h2{
@@ -57,4 +58,19 @@
     -webkit-mask-position: center;
     mask-repeat: no-repeat;
     -webkit-mask-repeat: no-repeat;
+}
+
+@media(max-width: 600px){
+    .accordion{
+        padding: 0px;
+        row-gap: 10px; 
+    }
+
+    .accordion > h2{
+        font-size: 0.9375rem;
+    }
+
+    .accordion > p{
+        font-size: 0.9375rem;
+    }
 }

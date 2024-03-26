@@ -10,19 +10,17 @@ function Accordion({question, answer}) {
         setOpen(!open);
     }
 
-
     useEffect(() => {
         if(open){
+            accordionRef.current.style.maxHeight = '610px';
             arrowRef.current.style.transform = 'rotate(180deg)';
             arrowRef.current.style.backgroundColor = '#FA5959';
-            accordionRef.current.style.maxHeight = '500px';
         }
         else{
+            accordionRef.current.style.maxHeight = ''
             arrowRef.current.style.transform = ''; 
             arrowRef.current.style.backgroundColor = '';
-            accordionRef.current.style.maxHeight = ''
         }
-
     }, [open])
 
     return(
