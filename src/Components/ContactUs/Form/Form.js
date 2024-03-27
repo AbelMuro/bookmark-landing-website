@@ -73,8 +73,10 @@ function Form() {
             displayInvalidErrorStyles();
     }
 
-    const handleSubmit = () => {
-        console.log('Email has been submitted');
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setEmail('');
+        alert('Email has been submitted');
     }
 
     useEffect(() => {
